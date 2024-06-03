@@ -1,0 +1,178 @@
+body,
+html {
+    color: #212529;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    overflow: hidden;
+}
+
+.loading {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+a {
+    font-size: 0.9rem;
+}
+
+.light-dots {
+    background-image: url(../images/light_dot.jpg);
+}
+
+.dark-dots {
+    background-image: url(../images/dark_dot.jpg);
+}
+
+.color-main {
+    color: #ff206e !important;
+}
+
+.bg-main {
+    background-color: #ff206e !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.title h2,
+.title h3 {
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.title h2 {
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #Fff !important;
+}
+
+nav {
+    transition: all 0.7s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+
+.icon a {
+    color: #Fff;
+}
+
+header {
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.about-image {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+
+#services .title h2 {
+    color: #222;
+}
+
+#services .title h3 {
+    color: #fff;
+}
+
+#services .icon {
+    background-color: #000;
+    color: #fff;
+    border: solid 2px #Fff;
+    border-radius: 50%;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+
+#services h4 {
+    position: relative;
+}
+
+#services h4::after {
+    content: "";
+    width: 15%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    position: absolute;
+    background-color: #ff206e;
+}
+
+.service-item {
+    margin: 40px 0px;
+}
+
+#Container {
+    font-family: 'segoe ui light';
+}
+
+
+#btnUp {
+    background-color: #ff206e;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+}
+
+.boxColors {
+    position: absolute;
+    top: 150;
+    left: 0;
+    background-color: grey;
+    z-index: 5555;
+}
+
+.boxColors span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.settings {
+    left: 100%;
+    top: 0;
+    cursor: pointer;
+}
