@@ -140,6 +140,25 @@ header {
 
 .service-item {
     margin: 40px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .service-item:hover,
+#price .service-item:hover,
+#blog .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.section-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #Container {

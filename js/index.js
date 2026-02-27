@@ -13,12 +13,27 @@ $(window).scroll(function () {
         $('#btnUp').fadeOut(300)
 
     }
+
+    revealOnScroll();
 });
+
+function revealOnScroll() {
+
+    let windowBottom = $(window).scrollTop() + $(window).height() - 150;
+
+    $('.section-animate').each(function () {
+        let sectionTop = $(this).offset().top;
+
+        if (sectionTop < windowBottom) {
+            $(this).addClass('visible');
+        }
+    });
+}
 
 
 
 $('#btnUp').click(function () {
-    $('body', 'html').animate({ scrollTop: 0 }, 1500)
+    $('html, body').animate({ scrollTop: 0 }, 1500)
 })
 
 
@@ -26,6 +41,7 @@ $('#btnUp').click(function () {
 $(document).ready(function () {
     $('.loading').fadeOut(1000, function () {
         $('body').css('overflow', 'visible')
+        revealOnScroll();
     })
 
 
